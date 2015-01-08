@@ -20,7 +20,7 @@ The way to play the game is to run it in xcode. Open the project (veggie-bounce/
 ---
 
 ### Special Thanks
-I'd like to thank some people for helping to make this game possible. 
+I'd like to thank the following people for helping to make this game possible. 
 
 **Matthew Gabor** - Matt has been a good friend of mine for a while. He initially pulled me into objective-C programming when I so stubbornly only wanted to use Adobe AIR for mobile apps. He also brought Spritekit to my attention and provided me with training materials that gave me the competence in Spritekit quirks and api to build this game. He was also there to listen as I bounced ideas off of him and gave me the feedback I needed to keep going. Thanks Matt. 
 
@@ -28,4 +28,4 @@ I'd like to thank some people for helping to make this game possible.
 
 **Garry Furnari** - Garry is a recruiter at InfoTech Solutions. He really motivated me to build this game so that I could show it off to potential employers. Not only did he push me to get it finished and put the time in, but knowing that he was sending it out to clients really made me want to make high quality source files. The code is nicely commented now, properly indented, and should hopefully make the programming masters proud. Thanks Garry.  
 
-
+And to everyone else who has supported me directly or indirectly with this project, thanks.
