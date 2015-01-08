@@ -42,7 +42,7 @@
     if (self = [super initWithSize:size]) {
         
         // Initialize game parameters.
-        self.lastUpdateTimeInterval = 0;
+        self.lastUpdateTimeInterval = 4;
         self.timeSinceEnemyAdded = 0;
         self.addEnemyTimeInterval = 6;
         self.totalGameTime = 0;
@@ -224,7 +224,6 @@
     [self.veggieArray addObject:veggie];
     
     
-    
     // Add a random bit of rotation to the veggie.
     int randomInt = [VEBUtils randomWithMin:1 max:20];
     NSLog(@"Got a random int: %d", randomInt);
@@ -244,17 +243,21 @@
 
 
 - (void) update:(NSTimeInterval)currentTime {
-//    if ( self.lastUpdateTimeInterval ) {
-//        self.timeSinceEnemyAdded += currentTime - self.lastUpdateTimeInterval;
-//        self.totalGameTime += currentTime - self.lastUpdateTimeInterval;
-//    }
-//    
-//    if ( self.timeSinceEnemyAdded > self.addEnemyTimeInterval && !gameOver ) {
-//        [self addVeggie];
-//        self.timeSinceEnemyAdded = 0;
-//    }
-//    
-//    self.lastUpdateTimeInterval = currentTime;
+    NSLog(@"Updating!!!");
+    if ( self.lastUpdateTimeInterval ) {
+        self.timeSinceEnemyAdded += currentTime - self.lastUpdateTimeInterval;
+        self.totalGameTime += currentTime - self.lastUpdateTimeInterval;
+    }
+    
+    NSLog(@"self.timeSinceEnemyAdded %f", self.timeSinceEnemyAdded);
+    NSLog(@"self.addEnemyTimeInterval %f!!!", self.addEnemyTimeInterval);
+    NSLog(@"gameOver %f", gameOver);
+    if ( self.timeSinceEnemyAdded > self.addEnemyTimeInterval && !gameOver ) {
+        [self addVeggie];
+        self.timeSinceEnemyAdded = 0;
+    }
+//
+    self.lastUpdateTimeInterval = currentTime;
 //    
 //    if ( self.totalGameTime > 480 ) {
 //        // 480 / 60 = 8 minutes
