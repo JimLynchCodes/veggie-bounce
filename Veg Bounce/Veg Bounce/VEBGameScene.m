@@ -146,20 +146,20 @@
                 }
                 
                 // Calculate yPower based on ydifference;
-                ypower = (ydifference - TOUCH_RADIUS) * -1 * POWER_MULTIPLIER;
+                ypower = (ydifference - TOUCH_RADIUS) * -1 * Y_POWER_MULTIPLIER;
                 [veggie.physicsBody applyImpulse:CGVectorMake(0, ypower)];
                 
 
                 // If touch is to the right of center of veggie.
                 if ( (veggieX) < touchLocationX)
                 {
-                    xPower = -1 * xdifference;
+                    xPower = -1 * xdifference * X_POWER_MULTIPLIER;
                     rotation = .15 + xdifference / 100;
                 }
                 // If touch is to the left of center of veggie.
                 if ((veggieX) > touchLocationX)
                 {
-                    xPower = xdifference;
+                    xPower = xdifference * X_POWER_MULTIPLIER;
                     rotation = -.15 - xdifference / 100;
                     
                 }
@@ -226,7 +226,7 @@
     
     
     // Add a random bit of rotation to the veggie.
-    int randomInt = [VEBUtils randomWithMin:1 max:20];
+    int randomInt = [VEBUtils randomWithMin:1 max:10];
     NSLog(@"Got a random int: %d", randomInt);
     
     // Returns only either 1 or 2 since arch4random() returns a random from min to max-1

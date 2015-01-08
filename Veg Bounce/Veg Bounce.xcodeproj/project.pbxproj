@@ -33,6 +33,10 @@
 		A006A6441A4CF108004F6893 /* GreenExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A006A6431A4CF108004F6893 /* GreenExplosion.sks */; };
 		A006A6461A4CF3C5004F6893 /* GreenMagic.sks in Resources */ = {isa = PBXBuildFile; fileRef = A006A6451A4CF3C5004F6893 /* GreenMagic.sks */; };
 		A006A6491A4D0175004F6893 /* VEBHudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A006A6481A4D0175004F6893 /* VEBHudNode.m */; };
+		A0B8CB801A5F20ED008B7252 /* SparkExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A0B8CB7F1A5F20ED008B7252 /* SparkExplosion.sks */; };
+		A0B8CB831A5F212E008B7252 /* BokehExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A0B8CB811A5F212E008B7252 /* BokehExplosion.sks */; };
+		A0B8CB841A5F212E008B7252 /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B8CB821A5F212E008B7252 /* bokeh.png */; };
+		A0B8CB861A5F2164008B7252 /* gExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A0B8CB851A5F2164008B7252 /* gExplosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		A006A6451A4CF3C5004F6893 /* GreenMagic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GreenMagic.sks; sourceTree = "<group>"; };
 		A006A6471A4D0175004F6893 /* VEBHudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBHudNode.h; sourceTree = "<group>"; };
 		A006A6481A4D0175004F6893 /* VEBHudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBHudNode.m; sourceTree = "<group>"; };
+		A0B8CB7F1A5F20ED008B7252 /* SparkExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkExplosion.sks; sourceTree = "<group>"; };
+		A0B8CB811A5F212E008B7252 /* BokehExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehExplosion.sks; sourceTree = "<group>"; };
+		A0B8CB821A5F212E008B7252 /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		A0B8CB851A5F2164008B7252 /* gExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = gExplosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +253,10 @@
 				A006A6401A4CEE7D004F6893 /* spark.png */,
 				A006A6431A4CF108004F6893 /* GreenExplosion.sks */,
 				A006A6451A4CF3C5004F6893 /* GreenMagic.sks */,
+				A0B8CB7F1A5F20ED008B7252 /* SparkExplosion.sks */,
+				A0B8CB811A5F212E008B7252 /* BokehExplosion.sks */,
+				A0B8CB821A5F212E008B7252 /* bokeh.png */,
+				A0B8CB851A5F2164008B7252 /* gExplosion.sks */,
 			);
 			name = particles;
 			sourceTree = "<group>";
@@ -331,13 +343,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A006A6441A4CF108004F6893 /* GreenExplosion.sks in Resources */,
+				A0B8CB861A5F2164008B7252 /* gExplosion.sks in Resources */,
 				9407ECDE19CB872A00700D0D /* Images.xcassets in Resources */,
 				A006A6421A4CEE7D004F6893 /* spark.png in Resources */,
 				9407ECD619CB872A00700D0D /* GameScene.sks in Resources */,
 				94510AE519D23102008CBA57 /* Sprites.atlas in Resources */,
+				A0B8CB801A5F20ED008B7252 /* SparkExplosion.sks in Resources */,
 				9407ECDC19CB872A00700D0D /* Main.storyboard in Resources */,
 				A006A6411A4CEE7D004F6893 /* MyParticle.sks in Resources */,
 				A006A6461A4CF3C5004F6893 /* GreenMagic.sks in Resources */,
+				A0B8CB831A5F212E008B7252 /* BokehExplosion.sks in Resources */,
+				A0B8CB841A5F212E008B7252 /* bokeh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,9 +14,10 @@ static const float TOUCH_RADIUS = 50;
 static const int MAX_LIVES = 3;
 static const int POINTS_PER_BOUNCE = 10;
 static const float TORQUE_MODIFIER = 2;
-static const float POWER_MULTIPLIER = 1.2;
 static const float HEART_SPACER = 10;
 static const bool DEBUG_MODE = false;
+static const float Y_POWER_MULTIPLIER = 1.2;
+static const float X_POWER_MULTIPLIER = 2.5;
 static int score = 0;
 
 #endif
