@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9407ECCE19CB872A00700D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407ECCD19CB872A00700D0D /* main.m */; };
+		9407ECD119CB872A00700D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407ECD019CB872A00700D0D /* AppDelegate.m */; };
+		9407ECD419CB872A00700D0D /* VEBGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407ECD319CB872A00700D0D /* VEBGameScene.m */; };
+		9407ECD619CB872A00700D0D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9407ECD519CB872A00700D0D /* GameScene.sks */; };
+		9407ECD919CB872A00700D0D /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407ECD819CB872A00700D0D /* GameViewController.m */; };
+		9407ECDC19CB872A00700D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9407ECDA19CB872A00700D0D /* Main.storyboard */; };
+		9407ECDE19CB872A00700D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9407ECDD19CB872A00700D0D /* Images.xcassets */; };
+		9407ECEA19CB872A00700D0D /* Veg_BounceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407ECE919CB872A00700D0D /* Veg_BounceTests.m */; };
+		94510ADA19D22F5A008CBA57 /* VEBTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 94510AD919D22F5A008CBA57 /* VEBTitleScene.m */; };
+		94510ADD19D2300A008CBA57 /* VEBGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 94510ADC19D2300A008CBA57 /* VEBGameOverNode.m */; };
+		94510AE019D23045008CBA57 /* VEBVeggieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 94510ADF19D23045008CBA57 /* VEBVeggieNode.m */; };
+		94510AE319D2308A008CBA57 /* VEBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 94510AE219D2308A008CBA57 /* VEBUtils.m */; };
+		94510AE519D23102008CBA57 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 94510AE419D23102008CBA57 /* Sprites.atlas */; };
+		94510AE719D23145008CBA57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94510AE619D23145008CBA57 /* Foundation.framework */; };
+		94510AE919D2316D008CBA57 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94510AE819D2316D008CBA57 /* SpriteKit.framework */; };
+		94510AEB19D23178008CBA57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94510AEA19D23178008CBA57 /* UIKit.framework */; };
+		94510AED19D231B0008CBA57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94510AEC19D231AF008CBA57 /* CoreGraphics.framework */; };
+		94510AEF19D231BE008CBA57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94510AEE19D231BE008CBA57 /* AVFoundation.framework */; };
+		94510AF319D23269008CBA57 /* VEBGroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 94510AF219D23269008CBA57 /* VEBGroundNode.m */; };
+		A006A6321A4BADF1004F6893 /* VEBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A006A6311A4BADF1004F6893 /* VEBModel.m */; };
+		A006A6361A4BAF88004F6893 /* VEBWallNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A006A6351A4BAF88004F6893 /* VEBWallNode.m */; };
+		A006A6411A4CEE7D004F6893 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A006A63F1A4CEE7D004F6893 /* MyParticle.sks */; };
+		A006A6421A4CEE7D004F6893 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A006A6401A4CEE7D004F6893 /* spark.png */; };
+		A006A6441A4CF108004F6893 /* GreenExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = A006A6431A4CF108004F6893 /* GreenExplosion.sks */; };
+		A006A6461A4CF3C5004F6893 /* GreenMagic.sks in Resources */ = {isa = PBXBuildFile; fileRef = A006A6451A4CF3C5004F6893 /* GreenMagic.sks */; };
+		A006A6491A4D0175004F6893 /* VEBHudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A006A6481A4D0175004F6893 /* VEBHudNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9407ECE419CB872A00700D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9407ECC019CB872A00700D0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9407ECC719CB872A00700D0D;
+			remoteInfo = "Veg Bounce";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9407ECC819CB872A00700D0D /* Veg Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Veg Bounce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9407ECCC19CB872A00700D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9407ECCD19CB872A00700D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9407ECCF19CB872A00700D0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9407ECD019CB872A00700D0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9407ECD219CB872A00700D0D /* VEBGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEBGameScene.h; sourceTree = "<group>"; };
+		9407ECD319CB872A00700D0D /* VEBGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VEBGameScene.m; sourceTree = "<group>"; };
+		9407ECD519CB872A00700D0D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9407ECD719CB872A00700D0D /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		9407ECD819CB872A00700D0D /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9407ECDB19CB872A00700D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9407ECDD19CB872A00700D0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9407ECE319CB872A00700D0D /* Veg BounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Veg BounceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9407ECE819CB872A00700D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9407ECE919CB872A00700D0D /* Veg_BounceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Veg_BounceTests.m; sourceTree = "<group>"; };
+		94510AD819D22F5A008CBA57 /* VEBTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBTitleScene.h; sourceTree = "<group>"; };
+		94510AD919D22F5A008CBA57 /* VEBTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBTitleScene.m; sourceTree = "<group>"; };
+		94510ADB19D2300A008CBA57 /* VEBGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBGameOverNode.h; sourceTree = "<group>"; };
+		94510ADC19D2300A008CBA57 /* VEBGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBGameOverNode.m; sourceTree = "<group>"; };
+		94510ADE19D23045008CBA57 /* VEBVeggieNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBVeggieNode.h; sourceTree = "<group>"; };
+		94510ADF19D23045008CBA57 /* VEBVeggieNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBVeggieNode.m; sourceTree = "<group>"; };
+		94510AE119D2308A008CBA57 /* VEBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBUtils.h; sourceTree = "<group>"; };
+		94510AE219D2308A008CBA57 /* VEBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBUtils.m; sourceTree = "<group>"; };
+		94510AE419D23102008CBA57 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		94510AE619D23145008CBA57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94510AE819D2316D008CBA57 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		94510AEA19D23178008CBA57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94510AEC19D231AF008CBA57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94510AEE19D231BE008CBA57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		94510AF119D23269008CBA57 /* VEBGroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBGroundNode.h; sourceTree = "<group>"; };
+		94510AF219D23269008CBA57 /* VEBGroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBGroundNode.m; sourceTree = "<group>"; };
+		A006A6301A4BADF1004F6893 /* VEBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBModel.h; sourceTree = "<group>"; };
+		A006A6311A4BADF1004F6893 /* VEBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBModel.m; sourceTree = "<group>"; };
+		A006A6341A4BAF88004F6893 /* VEBWallNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBWallNode.h; sourceTree = "<group>"; };
+		A006A6351A4BAF88004F6893 /* VEBWallNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBWallNode.m; sourceTree = "<group>"; };
+		A006A63D1A4C777B004F6893 /* VEBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEBConstants.h; sourceTree = "<group>"; };
+		A006A63F1A4CEE7D004F6893 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		A006A6401A4CEE7D004F6893 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A006A6431A4CF108004F6893 /* GreenExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GreenExplosion.sks; sourceTree = "<group>"; };
+		A006A6451A4CF3C5004F6893 /* GreenMagic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GreenMagic.sks; sourceTree = "<group>"; };
+		A006A6471A4D0175004F6893 /* VEBHudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBHudNode.h; sourceTree = "<group>"; };
+		A006A6481A4D0175004F6893 /* VEBHudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBHudNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9407ECC519CB872A00700D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94510AEF19D231BE008CBA57 /* AVFoundation.framework in Frameworks */,
+				94510AED19D231B0008CBA57 /* CoreGraphics.framework in Frameworks */,
+				94510AEB19D23178008CBA57 /* UIKit.framework in Frameworks */,
+				94510AE919D2316D008CBA57 /* SpriteKit.framework in Frameworks */,
+				94510AE719D23145008CBA57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9407ECE019CB872A00700D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9407ECBF19CB872A00700D0D = {
+			isa = PBXGroup;
+			children = (
+				9407ECCA19CB872A00700D0D /* Veg Bounce */,
+				9407ECE619CB872A00700D0D /* Veg BounceTests */,
+				9407ECC919CB872A00700D0D /* Products */,
+				94510AF019D231CD008CBA57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9407ECC919CB872A00700D0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9407ECC819CB872A00700D0D /* Veg Bounce.app */,
+				9407ECE319CB872A00700D0D /* Veg BounceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9407ECCA19CB872A00700D0D /* Veg Bounce */ = {
+			isa = PBXGroup;
+			children = (
+				A006A63E1A4CEE44004F6893 /* particles */,
+				A006A6331A4BAECC004F6893 /* utils */,
+				A006A62F1A4BADC8004F6893 /* model */,
+				A006A62E1A4BAD6F004F6893 /* view-controllers */,
+				94DF70AF19F5E03C0065E40F /* game-objects */,
+				9407ECD519CB872A00700D0D /* GameScene.sks */,
+				9407ECDA19CB872A00700D0D /* Main.storyboard */,
+				9407ECDD19CB872A00700D0D /* Images.xcassets */,
+				94510AE419D23102008CBA57 /* Sprites.atlas */,
+				9407ECCB19CB872A00700D0D /* Supporting Files */,
+			);
+			path = "Veg Bounce";
+			sourceTree = "<group>";
+		};
+		9407ECCB19CB872A00700D0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9407ECCF19CB872A00700D0D /* AppDelegate.h */,
+				9407ECD019CB872A00700D0D /* AppDelegate.m */,
+				9407ECD719CB872A00700D0D /* GameViewController.h */,
+				9407ECD819CB872A00700D0D /* GameViewController.m */,
+				9407ECCC19CB872A00700D0D /* Info.plist */,
+				9407ECCD19CB872A00700D0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9407ECE619CB872A00700D0D /* Veg BounceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9407ECE919CB872A00700D0D /* Veg_BounceTests.m */,
+				9407ECE719CB872A00700D0D /* Supporting Files */,
+			);
+			path = "Veg BounceTests";
+			sourceTree = "<group>";
+		};
+		9407ECE719CB872A00700D0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9407ECE819CB872A00700D0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94510AF019D231CD008CBA57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94510AEE19D231BE008CBA57 /* AVFoundation.framework */,
+				94510AEC19D231AF008CBA57 /* CoreGraphics.framework */,
+				94510AEA19D23178008CBA57 /* UIKit.framework */,
+				94510AE819D2316D008CBA57 /* SpriteKit.framework */,
+				94510AE619D23145008CBA57 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94DF70AF19F5E03C0065E40F /* game-objects */ = {
+			isa = PBXGroup;
+			children = (
+				94510AF119D23269008CBA57 /* VEBGroundNode.h */,
+				94510AF219D23269008CBA57 /* VEBGroundNode.m */,
+				94510ADE19D23045008CBA57 /* VEBVeggieNode.h */,
+				94510ADF19D23045008CBA57 /* VEBVeggieNode.m */,
+				A006A6341A4BAF88004F6893 /* VEBWallNode.h */,
+				A006A6351A4BAF88004F6893 /* VEBWallNode.m */,
+			);
+			name = "game-objects";
+			sourceTree = "<group>";
+		};
+		A006A62E1A4BAD6F004F6893 /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94510AD819D22F5A008CBA57 /* VEBTitleScene.h */,
+				94510AD919D22F5A008CBA57 /* VEBTitleScene.m */,
+				9407ECD219CB872A00700D0D /* VEBGameScene.h */,
+				9407ECD319CB872A00700D0D /* VEBGameScene.m */,
+				94510ADB19D2300A008CBA57 /* VEBGameOverNode.h */,
+				94510ADC19D2300A008CBA57 /* VEBGameOverNode.m */,
+				A006A6471A4D0175004F6893 /* VEBHudNode.h */,
+				A006A6481A4D0175004F6893 /* VEBHudNode.m */,
+			);
+			name = "view-controllers";
+			sourceTree = "<group>";
+		};
+		A006A62F1A4BADC8004F6893 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A006A6301A4BADF1004F6893 /* VEBModel.h */,
+				A006A6311A4BADF1004F6893 /* VEBModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		A006A6331A4BAECC004F6893 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				94510AE119D2308A008CBA57 /* VEBUtils.h */,
+				94510AE219D2308A008CBA57 /* VEBUtils.m */,
+				A006A63D1A4C777B004F6893 /* VEBConstants.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A006A63E1A4CEE44004F6893 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				A006A63F1A4CEE7D004F6893 /* MyParticle.sks */,
+				A006A6401A4CEE7D004F6893 /* spark.png */,
+				A006A6431A4CF108004F6893 /* GreenExplosion.sks */,
+				A006A6451A4CF3C5004F6893 /* GreenMagic.sks */,
+			);
+			name = particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9407ECC719CB872A00700D0D /* Veg Bounce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9407ECED19CB872A00700D0D /* Build configuration list for PBXNativeTarget "Veg Bounce" */;
+			buildPhases = (
+				9407ECC419CB872A00700D0D /* Sources */,
+				9407ECC519CB872A00700D0D /* Frameworks */,
+				9407ECC619CB872A00700D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Veg Bounce";
+			productName = "Veg Bounce";
+			productReference = 9407ECC819CB872A00700D0D /* Veg Bounce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9407ECE219CB872A00700D0D /* Veg BounceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9407ECF019CB872A00700D0D /* Build configuration list for PBXNativeTarget "Veg BounceTests" */;
+			buildPhases = (
+				9407ECDF19CB872A00700D0D /* Sources */,
+				9407ECE019CB872A00700D0D /* Frameworks */,
+				9407ECE119CB872A00700D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9407ECE519CB872A00700D0D /* PBXTargetDependency */,
+			);
+			name = "Veg BounceTests";
+			productName = "Veg BounceTests";
+			productReference = 9407ECE319CB872A00700D0D /* Veg BounceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9407ECC019CB872A00700D0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = GabaGames;
+				TargetAttributes = {
+					9407ECC719CB872A00700D0D = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 68YVNPE92U;
+					};
+					9407ECE219CB872A00700D0D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 9407ECC719CB872A00700D0D;
+					};
+				};
+			};
+			buildConfigurationList = 9407ECC319CB872A00700D0D /* Build configuration list for PBXProject "Veg Bounce" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9407ECBF19CB872A00700D0D;
+			productRefGroup = 9407ECC919CB872A00700D0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9407ECC719CB872A00700D0D /* Veg Bounce */,
+				9407ECE219CB872A00700D0D /* Veg BounceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9407ECC619CB872A00700D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A006A6441A4CF108004F6893 /* GreenExplosion.sks in Resources */,
+				9407ECDE19CB872A00700D0D /* Images.xcassets in Resources */,
+				A006A6421A4CEE7D004F6893 /* spark.png in Resources */,
+				9407ECD619CB872A00700D0D /* GameScene.sks in Resources */,
+				94510AE519D23102008CBA57 /* Sprites.atlas in Resources */,
+				9407ECDC19CB872A00700D0D /* Main.storyboard in Resources */,
+				A006A6411A4CEE7D004F6893 /* MyParticle.sks in Resources */,
+				A006A6461A4CF3C5004F6893 /* GreenMagic.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9407ECE119CB872A00700D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9407ECC419CB872A00700D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94510ADA19D22F5A008CBA57 /* VEBTitleScene.m in Sources */,
+				9407ECD919CB872A00700D0D /* GameViewController.m in Sources */,
+				A006A6491A4D0175004F6893 /* VEBHudNode.m in Sources */,
+				94510AE019D23045008CBA57 /* VEBVeggieNode.m in Sources */,
+				94510AE319D2308A008CBA57 /* VEBUtils.m in Sources */,
+				9407ECD119CB872A00700D0D /* AppDelegate.m in Sources */,
+				9407ECD419CB872A00700D0D /* VEBGameScene.m in Sources */,
+				A006A6361A4BAF88004F6893 /* VEBWallNode.m in Sources */,
+				9407ECCE19CB872A00700D0D /* main.m in Sources */,
+				94510ADD19D2300A008CBA57 /* VEBGameOverNode.m in Sources */,
+				94510AF319D23269008CBA57 /* VEBGroundNode.m in Sources */,
+				A006A6321A4BADF1004F6893 /* VEBModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9407ECDF19CB872A00700D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9407ECEA19CB872A00700D0D /* Veg_BounceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9407ECE519CB872A00700D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9407ECC719CB872A00700D0D /* Veg Bounce */;
+			targetProxy = 9407ECE419CB872A00700D0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9407ECDA19CB872A00700D0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9407ECDB19CB872A00700D0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9407ECEB19CB872A00700D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9407ECEC19CB872A00700D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9407ECEE19CB872A00700D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Veg Bounce/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9407ECEF19CB872A00700D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Veg Bounce/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9407ECF119CB872A00700D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Veg Bounce.app/Veg Bounce";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Veg BounceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		9407ECF219CB872A00700D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Veg Bounce.app/Veg Bounce";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Veg BounceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9407ECC319CB872A00700D0D /* Build configuration list for PBXProject "Veg Bounce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9407ECEB19CB872A00700D0D /* Debug */,
+				9407ECEC19CB872A00700D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9407ECED19CB872A00700D0D /* Build configuration list for PBXNativeTarget "Veg Bounce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9407ECEE19CB872A00700D0D /* Debug */,
+				9407ECEF19CB872A00700D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9407ECF019CB872A00700D0D /* Build configuration list for PBXNativeTarget "Veg BounceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9407ECF119CB872A00700D0D /* Debug */,
+				9407ECF219CB872A00700D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9407ECC019CB872A00700D0D /* Project object */;
+}
