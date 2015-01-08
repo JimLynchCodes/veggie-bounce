@@ -169,10 +169,11 @@
                 [veggie.physicsBody applyForce:CGVectorMake(xPower, 0)];
                 
                 // Display explosion at point clicked.
-                NSString *greenExplosionPath = [[NSBundle mainBundle] pathForResource:@"GreenMagic" ofType:@"sks"];
+                NSString *greenExplosionPath = [[NSBundle mainBundle] pathForResource:@"GreenExplosion" ofType:@"sks"];
                 // Play particle effects GreenExplosion
                 SKEmitterNode *greenExplosion = [NSKeyedUnarchiver unarchiveObjectWithFile:greenExplosionPath];
                 greenExplosion.position = CGPointMake(veggieX, veggieY);
+                greenExplosion.particleScale *= .5;
                 [self addChild:greenExplosion];
                 [greenExplosion runAction:[SKAction waitForDuration:2.0] completion:^{
                     [greenExplosion removeFromParent];
